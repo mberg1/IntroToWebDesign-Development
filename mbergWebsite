@@ -1,1 +1,18 @@
-d
+<html>
+  <head>
+    <title>mBerg's Text Adventure</title>
+  </head>
+  <body>
+    <h1>Are you Prepared?</h1>
+    <p>
+      Hello, I'm Michael Berg. I want to create a text adventure that anyone can enjoy.
+      My plan is to make a simple thing, such as text on a screen, become an engaging story
+      that can be taken in many directions. I hope you enjoy!
+    </p>
+  <h2>How to Play?</h2>
+     <p>
+       You will be directed through multiple steps of the story by interacting with links and
+       making choices from the decisions given.
+     </p>
+   </body>
+</html>
