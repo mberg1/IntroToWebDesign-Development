@@ -2,8 +2,12 @@
 <html>
  <head>
    <meta charset= "UTF-8">
-   <title>Game Start</title>
+   <title>It begins here</title>
  </head>
- <h1>It begins here</h1>
- <h2>Choose</h2>
+ <body>
+   <h1>Let's Begin!</h1>
+     <p>-Text-</p>
+   <h2>Choose</h2>
+     <p>-Choises-</p>
+ </body>
 </html>
