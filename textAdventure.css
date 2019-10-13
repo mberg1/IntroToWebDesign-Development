@@ -5,8 +5,11 @@ body{
 	background-color: yellow;
 	font-family: serif;
 	margin: 50px;
-	/*text-align: center;*/
+	text-align: center;
 }
 h1{
         font-size: 1.35em;
+}
+ul{
+        list-style-position: inside;
 }
