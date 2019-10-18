@@ -15,6 +15,16 @@
    <br><input type= "radio" name= "choices" value= "choice2">Choice2
    <br><input type= "radio" name= "choices" value= "choice3">Choice3
    <br><button type= "submit">Begin Adventure</button>
+   <script>
+    <function getElementById("choices")>
+    var radios = form.elements[choices];
+    
+    for (var i=0, len=radios.length; i<len; i++) {
+        if ( radios[i].checked ) {
+            val = radios[i].value;
+        }
+    }
+    </funtion>
   </form>
  </body>
 </html>
