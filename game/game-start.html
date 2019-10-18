@@ -10,25 +10,30 @@
      <p>-Text-</p>
    <h2>Choose</h2>
    <ol>-Choices-
-  <form>
-   <input type= "radio" name= "choices" value= "choice1">Choice1
-   <br><input type= "radio" name= "choices" value= "choice2">Choice2
-   <br><input type= "radio" name= "choices" value= "choice3">Choice3
-   <br><button onclick= "myFunction()">Begin Adventure</button>
-   <script>
-    <function myFunction() {
-      var choices= form.elements[choices];
-      for (var i=0; i < choices; i++) {
-      if (choice1[i]. checked)
-       <a href= "/choice1.html"></a>
-       if (choice2[i]. checked)
-       <a href= "/choice2.html"></a>
-       if (choice3[i]. checked)
-       <a href= "/choice3.html"></a>
-      }  
+  <form onsubmit= "return is_checked()">
+   Choice 1<input type= "radio" name= "choice-set-1" value= "choice-1" id= "choice-set-1-choice-1"/>
+   Choice 2<input type= "radio" name= "choice-set-1" value= "choice-2" id= "choice-set-1-choice-2"/>
+   Choice 3<input type= "radio" name= "choice-set-1" value= "choice-3" id= "choice-set-1-choice-3"/>
+   <input type= "submit" value= "Begin Adventure">
+   <script type= "text/javascript">
+    function is_checked(){
+     var choice-1_checked= document.getElementById(choice-set-1-choice-1).checked;
+     var choice-2_checked= document.getElementById(choice-set-1-choice-2).checked;
+     var choice-3_checked= document.getElementById(choice-set-1-choice-3).checked;
+     if (choice-1_checked==false && choice-2_checked==false && choice-3_checked==false){
+      alert("Choose")
+      return false;
+     }
+     if (choice-1_checked==true){
+      alert("Link to choice 1")
+     }
+     if (choice-2_checked==true){
+      alert("Link to choice 2")
+     }
+     if (choice-3_checked==true){
+      alert("Link to choice 3")
+     }
     }
-    </funtion>
-   </script>
   </form>
  </body>
 </html>
