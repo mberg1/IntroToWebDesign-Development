@@ -13,3 +13,7 @@ h1{
 ul{
         list-style-position: inside;
 }
+#about{
+	font-weight: bold;
+	border-style: solid;
+}
