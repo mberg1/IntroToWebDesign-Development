@@ -16,11 +16,11 @@ function redirectPage(f)
 for(var i=0; i<f.answer.length; i++) {
     if(f.answer[i].checked) {
         if (f.answer[i].value == 'choice-1')
-            {window.location = "game/choice1";}
+            {document.location.href = "game/choice1";}
         if (f.answer[i].value == 'choice-2')
-	        {window.location = "game/choice2";}
-	    if (f.answer[i].value == 'choice-1')
-	        {window.location = "game/choice3";}
+	    {document.location.href = "game/choice2";}
+        if (f.answer[i].value == 'choice-1')
+	    {document.location.href = "game/choice3";}
         }
     }
 }
