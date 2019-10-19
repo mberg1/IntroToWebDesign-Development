@@ -10,31 +10,26 @@
      <p>-Text-</p>
    <h2>Choose</h2>
    <ol>-Choices-
-   <script type= "text/javascript">
-   function is_checked(){
-    var choice1_checked= document.getElementById(choice-set-1-choice1).checked;
-    var choice2_checked= document.getElementById(choice-set-1-choice2).checked;
-    var choice3_checked= document.getElementById(choice-set-1-choice3).checked;
-    if (choice1_checked==false && choice2_checked==false && choice3_checked==false){
-     alert("Choose");
-     return false;
+   <script type="text/javascript">
+function redirectPage(f)
+{
+for(var i=0; i<f.answer.length; i++) {
+    if(f.answer[i].checked) {
+        if (f.answer[i].value == 'choice-1')
+            {window.location = "game/choice1";}
+        if (f.answer[i].value == 'choice-2')
+	        {window.location = "game/choice2";}
+	    if (f.answer[i].value == 'choice-1')
+	        {window.location = "game/choice3";}
+        }
     }
-    if (choice1_checked==true){
-     <a href= "game/choice1">;
-    }
-    if (choice2_checked==true){
-     document.location.href= "game/choice2";
-    }
-    if (choice3_checked==true){
-     document.location.href= "game/choice3";
-     }
-    }
-  </script>
-  <form onsubmit= "return is_checked()">
-   Choice 1<input type= "radio" name= "choice-set-1" value= "choice-1" id= "choice-set-1-choice-1"/></br>
-   Choice 2<input type= "radio" name= "choice-set-1" value= "choice-2" id= "choice-set-1-choice-2"/></br>
-   Choice 3<input type= "radio" name= "choice-set-1" value= "choice-3" id= "choice-set-1-choice-3"/></br>
-   <input type= "submit" value= "Begin Adventure">
+}
+</script>
+  <form method="post" action="#">
+  <label><input type="radio" name="choice-set-1" value="choice-1">Choice 1</label>
+  <label><input type="radio" name="choice-set-1" value="choice-3">Choice 2</label>
+  <label><input type="radio" name="choice-set-1" value="choice-3">Choice 3</label>
+  <input type="button" value="Redirect" onclick="redirectPage(this.form)">
   </form>
  </body>
 </html>
