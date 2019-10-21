@@ -12,15 +12,15 @@
    <ol>-Choices-
    <script type= "text/javascript">
    function is_checked(){
-    var choice1_checked= document.getElementById(choice-set-1-choice-1).checked;
-    var choice2_checked= document.getElementById(choice-set-1-choice-2).checked;
-    var choice3_checked= document.getElementById(choice-set-1-choice-3).checked;
+    var choice1_checked= document.getElementById(choice-1).checked;
+    var choice2_checked= document.getElementById(choice-2).checked;
+    var choice3_checked= document.getElementById(choice-3).checked;
     if (choice1_checked==false && choice2_checked==false && choice3_checked==false){
      alert("Choose");
      return false;
     }
     if (choice1_checked==true){
-     <a href= "game/choice1">;
+     document.location.href= "game/choice1";
     }
     if (choice2_checked==true){
      document.location.href= "game/choice2";
