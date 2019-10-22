@@ -12,29 +12,29 @@
    <ol>-Choices-
    <script type= "text/javascript">
    function redirectPage(){
-    var choice1_checked= document.getElementById(choice-1).checked;
-    var choice2_checked= document.getElementById(choice-2).checked;
-    var choice3_checked= document.getElementById(choice-3).checked;
+    var choice1_checked= document.getElementById("choice-1").checked;
+    var choice2_checked= document.getElementById("choice-2").checked;
+    var choice3_checked= document.getElementById("choice-3").checked;
     if (choice1_checked==false && choice2_checked==false && choice3_checked==false){
      alert("Choose");
      return false;
     }
-    if (choice1_checked==true){
+    if (choice1_checked){
      document.location.href= "game/choice1";
     }
-    if (choice2_checked==true){
+    if (choice2_checked){
      document.location.href= "game/choice2";
     }
-    if (choice3_checked==true){
+    if (choice3_checked){
      document.location.href= "game/choice3";
      }
     }
   </script>
   <form method="post" action="#">
-  <label><input type="radio" name="choice-set-1" value="choice-1">Choice 1</label>
-  <label><input type="radio" name="choice-set-1" value="choice-3">Choice 2</label>
-  <label><input type="radio" name="choice-set-1" value="choice-3">Choice 3</label>
-  <input type="button" value="Begin Adventure" onclick="redirectPage(this.form)">
+  <label><input type="radio" name="choice-set-1" id="choice-1">Choice 1</label>
+  <label><input type="radio" name="choice-set-1" id="choice-2">Choice 2</label>
+  <label><input type="radio" name="choice-set-1" id="choice-3">Choice 3</label>
+  <input type="button" value="Begin Adventure" onclick="redirectPage()">
   </form>
  </body>
 </html>
