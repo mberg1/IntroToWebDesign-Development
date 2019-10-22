@@ -9,8 +9,14 @@
    <h1>Let's Begin!</h1>
      <p>-Text-</p>
    <h2>Choose</h2>
-   <ol>-Choices-
-   <script type= "text/javascript">
+  <ol>-Choices-</ol>
+  <form method="post" action="#">
+  <label><input type="radio" name="choice-set-1" id="choice-1">Choice 1</label><br>
+  <label><input type="radio" name="choice-set-1" id="choice-2">Choice 2</label><br>
+  <label><input type="radio" name="choice-set-1" id="choice-3">Choice 3</label><br>
+  <input type="button" value="Begin Adventure" onclick="redirectPage()">
+  </form>
+  <script type= "text/javascript">
    function redirectPage(){
     var choice1_checked= document.getElementById("choice-1").checked;
     var choice2_checked= document.getElementById("choice-2").checked;
@@ -20,21 +26,15 @@
      return false;
     }
     if (choice1_checked){
-     window.location= "choice1";
+     window.location.href= "choice1";
     }
     if (choice2_checked){
-     window.location= "choice2";
+     window.location.href= "choice2";
     }
     if (choice3_checked){
      window.location.href= "choice3";
      }
     }
   </script>
-  <form method="post" action="#">
-  <label><input type="radio" name="choice-set-1" id="choice-1">Choice 1</label><br>
-  <label><input type="radio" name="choice-set-1" id="choice-2">Choice 2</label><br>
-  <label><input type="radio" name="choice-set-1" id="choice-3">Choice 3</label><br>
-  <input type="button" value="Begin Adventure" onclick="redirectPage()">
-  </form>
  </body>
 </html>
