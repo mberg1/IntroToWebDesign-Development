@@ -2,7 +2,7 @@ html{
        background-color: black;
 }
 body{
-	background-image: url("background.jpeg");
+	background-image: url("../images/background.jpeg");
 	font-family: serif;
 	margin: 50px;
 	text-align: center;
