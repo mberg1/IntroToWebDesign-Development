@@ -3,12 +3,13 @@ html{
 }
 body{
 	background-image: url("../images/background.jpeg");
+	background-opacity: .5;
 	font-family: serif;
 	margin: 50px;
 	text-align: center;
 }
 h1{
-        font-size: 1.35em;
+        font-size: 1.5em;
 }
 ul{
         list-style-position: inside;
@@ -16,4 +17,18 @@ ul{
 #about{
 	font-weight: bold;
 	border-style: solid;
+	width: 125px;
+	margin: 0px 0px 0px 400px;
+}
+.leftside{
+        float: left;
+	width: 200px;
+}
+.rightside{
+        float: right;
+	width: 200px;
+}
+#copyright{
+        color: red;
+	font-size: .75em;
 }
