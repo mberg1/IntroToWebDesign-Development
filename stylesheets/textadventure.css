@@ -3,6 +3,7 @@ html{
 }
 body{
 	background-image: url("../images/background.jpeg");
+	background-repeat: no-repeat;
 	background-opacity: .1;
 	font-family: serif;
 	text-align: center;
@@ -10,7 +11,8 @@ body{
 	margin: 0;
 	padding: 0;
 	margin-top: 38px;
-    margin-bottom: -10px;
+	margin-bottom: -20px;
+    line-height: 1.25em;
 
 }
 h1{
@@ -44,6 +46,7 @@ nav ul{
 	margin: 0;
 	position: fixed;
 	top: 0;
+	width: 100%;
 }
 li {
 	float: left;
@@ -52,12 +55,17 @@ li a {
 	text-decoration: none;
 	padding: 10px;
 	display: block;
-	color: white;
+	color: yellow;
 }
 li a:hover {
 	color: red;
 }
-
 .active {
 	background-color: green;
+}
+footer {
+	background-color: green;
+}
+li a.before-game {
+	color: white;
 }

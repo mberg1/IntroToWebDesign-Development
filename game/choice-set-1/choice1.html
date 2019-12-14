@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang= "en-us">
   <head>
-    <title>Choice 2B</title>
+    <title>Choice 1</title>
     <meta charset= "UTF-8">
     <link type= "text/css" rel= "stylesheet" href= "../../stylesheets/textadventure.css">
-    <link type= "text/css" rel= "stylesheet" href= "../stylesheets/textadventure-mobile.css" media= "screen and (max-width: 481px)">
+    <link type= "text/css" rel= "stylesheet" href= "../../stylesheets/textadventure-mobile.css" media= "screen and (max-width: 481px)">
     <link rel="apple-touch-icon" sizes="57x57" href="../../images/favicons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="../../images/favicons/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="../../images/favicons/apple-icon-72x72.png">
@@ -39,28 +39,28 @@
    <h2>Choose</h2>
   <ol>-Choices-</ol>
   <form method="post" action="#">
-  <label><input type="radio" name="choice-set-3" id="choice-2b1">Choice 1</label><br>
-  <label><input type="radio" name="choice-set-3" id="choice-2b2">Choice 2</label><br>
-  <label><input type="radio" name="choice-set-3" id="choice-2b3">Choice 3</label><br>
+  <label><input type="radio" name="choice-set-2" id="choice-1a">Choice 1</label><br>
+  <label><input type="radio" name="choice-set-2" id="choice-1b">Choice 2</label><br>
+  <label><input type="radio" name="choice-set-2" id="choice-1c">Choice 3</label><br>
   <input type="button" value="Begin Adventure" onclick="redirectPage()">
   </form>
   <script type= "text/javascript">
    function redirectPage(){
-    var choice1_checked= document.getElementById("choice-2b1").checked;
-    var choice2_checked= document.getElementById("choice-2b2").checked;
-    var choice3_checked= document.getElementById("choice-2b3").checked;
+    var choice1_checked= document.getElementById("choice-1a").checked;
+    var choice2_checked= document.getElementById("choice-1b").checked;
+    var choice3_checked= document.getElementById("choice-1c").checked;
     if (choice1_checked==false && choice2_checked==false && choice3_checked==false){
      alert("Choose");
      return false;
     }
     if (choice1_checked){
-     window.location.href= "../choice-set-3/choice2b1.html";
+     window.location.href= "../choice-set-2/choice1a.html";
     }
     if (choice2_checked){
-     window.location.href= "../choice-set-3/choice2b2.html";
+     window.location.href= "../choice-set-2/choice1b.html";
     }
     if (choice3_checked){
-     window.location.href= "../choice-set-3/choice2b3.html";
+     window.location.href= "../choice-set-2/choice1c.html";
      }
     }
   </script>
