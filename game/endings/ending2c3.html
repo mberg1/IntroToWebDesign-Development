@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang= "en-us">
   <head>
-    <title>Choice 3</title>
+    <title>Ending 2C3</title>
     <meta charset= "UTF-8">
     <link type= "text/css" rel= "stylesheet" href= "../stylesheets/textadventure.css">
     <link rel="apple-touch-icon" sizes="57x57" href="../images/favicons/apple-icon-57x57.png">
@@ -33,35 +33,7 @@
       <li><a href= "../about/subscribe.html">Subscribe</a></li>
      </ul>
     </nav>
-  <h1>Choice 3</h1>
+  <h1>Choice 1</h1>
   <p>-Text-</p>
-   <h2>Choose</h2>
-  <ol>-Choices-</ol>
-  <form method="post" action="#">
-  <label><input type="radio" name="choice-set-2" id="choice-3a">Choice 1</label><br>
-  <label><input type="radio" name="choice-set-2" id="choice-3b">Choice 2</label><br>
-  <label><input type="radio" name="choice-set-2" id="choice-3c">Choice 3</label><br>
-  <input type="button" value="Begin Adventure" onclick="redirectPage()">
-  </form>
-  <script type= "text/javascript">
-   function redirectPage(){
-    var choice1_checked= document.getElementById("choice-3a").checked;
-    var choice2_checked= document.getElementById("choice-3b").checked;
-    var choice3_checked= document.getElementById("choice-3c").checked;
-    if (choice1_checked==false && choice2_checked==false && choice3_checked==false){
-     alert("Choose");
-     return false;
-    }
-    if (choice1_checked){
-     window.location.href= "choice-set-2/choice3a.html";
-    }
-    if (choice2_checked){
-     window.location.href= "choice-set-2/choice3b.html";
-    }
-    if (choice3_checked){
-     window.location.href= "choice-set-2/choice3c.html";
-     }
-    }
-  </script>
 </body>
 </html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang= "en-us">
+  <head>
+    <title>Choice 2B</title>
+    <meta charset= "UTF-8">
+    <link type= "text/css" rel= "stylesheet" href= "../../stylesheets/textadventure.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="../../images/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../../images/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../../images/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../../images/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../../images/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../../images/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../../images/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../../images/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../images/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="../../images/favicons/android-icon-192x192.png">    
+    <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../../images/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="../../images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../../images/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+<body>
+  <nav>
+     <ul>
+      <li class= "active"><a href= "../../index.html">Home</a></li>
+      <li><a href= "../../about/bio.html" target="_about">Biography</a></li>
+      <li><a href= "../../about/contacts.html" target="_about">Contacts</a></li>
+      <li><a href= "../../about/info.html" target="_about">Additional Info</a></li>
+      <li><a href= "../../about/credits.html" target="_about">Credits</a></li>
+      <li><a href= "../../about/subscribe.html">Subscribe</a></li>
+     </ul>
+    </nav>
+  <h1>Choice 1</h1>
+  <p>-Text-</p>
+   <h2>Choose</h2>
+  <ol>-Choices-</ol>
+  <form method="post" action="#">
+  <label><input type="radio" name="choice-set-3" id="choice-2b1">Choice 1</label><br>
+  <label><input type="radio" name="choice-set-3" id="choice-2b2">Choice 2</label><br>
+  <label><input type="radio" name="choice-set-3" id="choice-2b3">Choice 3</label><br>
+  <input type="button" value="Begin Adventure" onclick="redirectPage()">
+  </form>
+  <script type= "text/javascript">
+   function redirectPage(){
+    var choice1_checked= document.getElementById("choice-2b1").checked;
+    var choice2_checked= document.getElementById("choice-2b2").checked;
+    var choice3_checked= document.getElementById("choice-2b3").checked;
+    if (choice1_checked==false && choice2_checked==false && choice3_checked==false){
+     alert("Choose");
+     return false;
+    }
+    if (choice1_checked){
+     window.location.href= "../choice-set-3/choice2b1";
+    }
+    if (choice2_checked){
+     window.location.href= "../choice-set-3/choice2b2";
+    }
+    if (choice3_checked){
+     window.location.href= "../choice-set-3/choice2b3";
+     }
+    }
+  </script>
+</body>
+</html>

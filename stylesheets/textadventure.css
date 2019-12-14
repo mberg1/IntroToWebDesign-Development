@@ -11,9 +11,11 @@ body{
 	padding: 0;
 	margin-top: 38px;
     margin-bottom: -10px;
+
 }
 h1{
         font-size: 1.5em;
+        padding-top: 20px;
 }
 .leftside{
         float: left;
