@@ -4,7 +4,7 @@ html{
 body{
 	background-image: url("../images/background.jpeg");
 	background-repeat: no-repeat;
-	background-opacity: .1;
+	opacity: .1;
 	font-family: serif;
 	text-align: center;
 	font-weight: bold;
