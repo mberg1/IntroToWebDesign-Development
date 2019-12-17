@@ -71,3 +71,6 @@ footer {
 li a.before-game {
 	color: white;
 }
+img:hover {
+	transform: scale(1.5);
+}
