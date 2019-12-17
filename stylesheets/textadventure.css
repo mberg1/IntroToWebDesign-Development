@@ -72,7 +72,6 @@ li a.before-game {
 }
 img {
 	border-radius: 8px;
-	opacity: .1;
 }
 img:hover {
 	transform: scale(1.2);
