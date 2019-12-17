@@ -4,7 +4,6 @@ html{
 body{
 	background-image: url("../images/background.jpeg");
 	background-repeat: no-repeat;
-	opacity: .1;
 	font-family: serif;
 	text-align: center;
 	font-weight: bold;
@@ -73,6 +72,7 @@ li a.before-game {
 }
 img {
 	border-radius: 8px;
+	opacity: .1;
 }
 img:hover {
 	transform: scale(1.5);
