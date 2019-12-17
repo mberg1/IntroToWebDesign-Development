@@ -71,6 +71,9 @@ footer {
 li a.before-game {
 	color: white;
 }
+img {
+	border-radius: 8px;
+}
 img:hover {
 	transform: scale(1.5);
 }
